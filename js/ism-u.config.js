@@ -1,3 +1,5 @@
+
+
 /*!
  * ISM.js NIPRNet Configuration
  */
@@ -6,7 +8,7 @@ window.ISMConfig = window.ISMConfig || {};
 
 (function ($) {
 
-    window.ISMConfig = Object.assign(true, {}, window.ISMConfig, {
+  window.ISMConfig = $.extend(true, {}, window.ISMConfig, {
 
     defaults: {
       classification: ['U'],
@@ -58,14 +60,6 @@ window.ISMConfig = window.ISMConfig || {};
     tetragraphs: {}
 
   });
-
-  /*!
-   * Module export
-   */
-  if (typeof exports !== 'undefined') {
-    if (typeof module !== 'undefined' && module.exports) {
-        exports = module.exports = window.ISMConfig;
-    }
-  }
-
 }(window.jQuery));
+
+
