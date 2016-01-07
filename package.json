@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ozone-development/bootstrap-classify/issues"
   },
-  "homepage": "https://github.com/ozone-development/bootstrap-classify#readme"
+  "homepage": "https://github.com/ozone-development/bootstrap-classify#readme",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "underscore": "~1.8.3"
+  }
 }
