@@ -59,7 +59,7 @@ if (typeof ism === 'undefined') {
     format: 'pm',			// {string} <pm|bl> render classification marking as Portion Mark or Banner Line
     mode: 'popover',	// {string} <popover|modal>
     fdr: true, 				// {boolean} enforce FD&R markings, i.e. prohibits straight classifications
-    fgi: true,				// {boolean} enable FGI markings
+    fgi: false,				// {boolean} enable FGI markings
     nonic: true,			// {boolean} enable Non-IC markings
     relto: true,			// {boolean} enable Rel To markings
     headings: true,		// {boolean} show table headings
