@@ -53,8 +53,8 @@ if (typeof ism === 'undefined') {
     ownerproducer: ['USA'],			// {array|string} OwnerProducer trigraphs
     fgisourceopen: [],					// {array|string} FGI Open Sources
     fgisourceprotected: [],			// {array|string} <FGI|''>
-    trigraphs: ['AUS','CAN','GBR','NZL'],	// {array} list of trigraphs to show by default
-    tetragraphs: ['TEYE','ACGU','FVEY','NATO'], // {array} list of tetragraphs to show by default
+    trigraphs: ['STE','RVR','TWN','DRS','RED'],	// {array} list of trigraphs to show by default
+    tetragraphs: ['ALL'], // {array} list of tetragraphs to show by default
     btnsize: 'xs',		// {string} <xs|sm|lg> Bootstrap button size class
     format: 'pm',			// {string} <pm|bl> render classification marking as Portion Mark or Banner Line
     mode: 'popover',	// {string} <popover|modal>
