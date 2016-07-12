@@ -58,6 +58,7 @@ if (typeof ism === 'undefined') {
     btnsize: 'xs',		// {string} <xs|sm|lg> Bootstrap button size class
     format: 'pm',			// {string} <pm|bl> render classification marking as Portion Mark or Banner Line
     mode: 'popover',	// {string} <popover|modal>
+    placement: 'right',     // {string} <top|right|bottom|left> placement of popover
     fdr: true, 				// {boolean} enforce FD&R markings, i.e. prohibits straight classifications
     fgi: false,				// {boolean} enable FGI markings
     nonic: true,			// {boolean} enable Non-IC markings
@@ -151,6 +152,7 @@ if (typeof ism === 'undefined') {
 	content: '<div class="bs-classify"></div>',
 	delay: 0,
 	html: true,
+	placement: this.options.placement,
 	template: this.tpl.popover,
 	title: this.options.title,
 	viewport: this.options.viewport
