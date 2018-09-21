@@ -1,8 +1,5 @@
 /*!
  * Bootstrap Classify 2 | JavaScript Classification Marking Tool
-
-
-
  */
 
 /*jslint browser: true, devel: true, nomen: true, unparam: true, white: true */
@@ -56,11 +53,12 @@ if (typeof ism === 'undefined') {
     ownerproducer: ['USA'],			// {array|string} OwnerProducer trigraphs
     fgisourceopen: [],					// {array|string} FGI Open Sources
     fgisourceprotected: [],			// {array|string} <FGI|''>
-    trigraphs: ['AUS','CAN','GBR','NZL'],	// {array} list of trigraphs to show by default
-    tetragraphs: ['TEYE','ACGU','FVEY','NATO'], // {array} list of tetragraphs to show by default
+    trigraphs: ['STE','RVR','TWN','DRS','RED'],	// {array} list of trigraphs to show by default
+    tetragraphs: ['ALL'], // {array} list of tetragraphs to show by default
     btnsize: 'xs',		// {string} <xs|sm|lg> Bootstrap button size class
     format: 'pm',			// {string} <pm|bl> render classification marking as Portion Mark or Banner Line
     mode: 'popover',	// {string} <popover|modal>
+    placement: 'right',     // {string} <top|right|bottom|left> placement of popover
     fdr: true, 				// {boolean} enforce FD&R markings, i.e. prohibits straight classifications
     fgi: false,				// {boolean} enable FGI markings
     nonic: true,			// {boolean} enable Non-IC markings
@@ -100,8 +98,6 @@ if (typeof ism === 'undefined') {
 	var data = _.pick(this.options, this.conf.keys);
 	this.ism = ism(data, { format: this.format });
       }
-
-      console.log(this);
 
       this.typeahead = {
 	mode: undefined,
@@ -156,6 +152,7 @@ if (typeof ism === 'undefined') {
 	content: '<div class="bs-classify"></div>',
 	delay: 0,
 	html: true,
+	placement: this.options.placement,
 	template: this.tpl.popover,
 	title: this.options.title,
 	viewport: this.options.viewport
